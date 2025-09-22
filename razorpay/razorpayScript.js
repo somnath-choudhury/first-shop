@@ -32,5 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var rzpy1 = new Razorpay(options);
   rzpy1.open();
   // clear mycart - localStorage
+  localStorage.removeItem('cart')
+
 };
 })

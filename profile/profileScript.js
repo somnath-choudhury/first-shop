@@ -4,7 +4,7 @@ let users = JSON.parse(localStorage.getItem('users')) || []
 
 if (!token || !user) {
   alert(`Unauthorized access. Please login`)
-  window.location.href = '/f3-project/index.html'
+  window.location.href = '/index.html'
 }
 
 const firstNameInput = document.querySelector('#profile-name input:nth-of-type(1)');
@@ -80,5 +80,5 @@ logoutBtn.addEventListener('click', () => {
     localStorage.removeItem('loggedInUser')
     localStorage.removeItem('cart')
     alert(`Logged out successfully!`)
-    window.location.href = "/f3-project/index.html"
+    window.location.href = "/index.html"
 });

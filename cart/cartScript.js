@@ -3,7 +3,7 @@ const user = JSON.parse(localStorage.getItem('loggedInUser'))
 
 if (!token || !user) {
   alert(`Unauthorized access. Please login`)
-  window.location.href = '/f3-project/index.html'
+  window.location.href = '/index.html'
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('checkout-button').addEventListener('click', () => {
-    window.location.href = '/f3-project/razorpay/razorpay.html'
+    window.location.href = '/razorpay/razorpay.html'
   })
   }
 

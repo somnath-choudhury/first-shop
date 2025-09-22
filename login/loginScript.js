@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('token', token);
         localStorage.setItem('loggedInUser', JSON.stringify(user))
 
-        window.location.href = '/f3-project/shop/shop.html'
+        window.location.href = '/shop/shop.html'
     }
 })

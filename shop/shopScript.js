@@ -3,7 +3,7 @@ const user = JSON.parse(localStorage.getItem('loggedInUser'))
 
 if (!token || !user) {
   alert(`Unauthorized access. Please login`)
-  window.location.href = '/f3-project/index.html'
+  window.location.href = '/index.html'
 }
 
 document.getElementById('welcome-msg').innerHTML += `Welcome ${user.first} ${user.last},`
@@ -84,7 +84,7 @@ const ratingValue = document.getElementById("rating-value");
 
 ratingRange.addEventListener("input", () => {
   const minRating = parseFloat(ratingRange.value);
-  ratingValue.textContent = minRating; // Update text
+  ratingValue.textContent = minRating;
   const filtered = allProducts.filter(p => p.rating.rate >= minRating);
   renderProducts(filtered);
 });
