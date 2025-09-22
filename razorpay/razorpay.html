@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout | MyShop</title>
+  <link rel="stylesheet" href="razorpayStyles.css" />
+</head>
+<body>
+  <div class="checkout-container">
+    <div class="checkout-box">
+      <h1 class="shop-name">MyShop Checkout</h1>
+      <p class="checkout-text">
+        Click the button below to securely complete your payment with Razorpay.
+      </p>
+      <button id="rzp-button1" class="pay-btn">Pay Now</button>
+      <p class="note">You will be redirected to a secure payment gateway.</p>
+    </div>
+  </div>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="razorpayScript.js"></script>
+</body>
+</html>

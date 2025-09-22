@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    padding: 10px;
+    width: 100%;
+    height: 52px;
+    background-color: black;
+    color: bisque;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-items {
+    align-items: end;
+    text-align: end;
+}
+
+#nav-items {
+    display: flex;
+    gap: 1rem;
+}
+        
+#nav-items a {
+    color: bisque;
+    font-weight: 500;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 200ms;
+}
+        
+#nav-items a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#signup-heading {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#inputs {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input {
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+.submit-button {
+    margin-left: 10px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#signup-button {
+    background-color: black;
+    color: bisque;
+}
+
+#signup-button:hover {
+    background-color: white;
+    color: black;
+}

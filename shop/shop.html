@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeShop</title>
+  <link rel="stylesheet" href="shopStyles.css" />
+</head>
+<body>
+  <div class="container">
+
+    <nav id="navbar">
+      <div id="shop-name">SomnathShop.</div>
+      <div id="nav-items">
+        <a href="/f3-project/index.html">Home</a>
+        <a href="/f3-project/login/login.html">Login</a>
+        <a href="/f3-project/signup/signup.html">SignUp</a>
+        <a href="/f3-project/shop/shop.html">Shop</a>
+        <a href="/f3-project/cart/cart.html">MyCart</a>
+        <a href="/f3-project/profile/profile.html">Profile</a>
+      </div>
+    </nav>
+
+    <main id="shop-main">
+
+      <!-- Filters -->
+      <div id="filters">
+        <!-- Colors -->
+        <div class="filter-section">
+          <h3>Category</h3>
+          <ul>
+            <li><input id="men's clothing" type="checkbox" name="category" /><label for="men's clothing">Men</label></li>
+            <li><input id="jewelery" type="checkbox" name="jewelery" /><label for="jewelery">Jewellery</label></li>
+            <li><input id="women's clothing" type="checkbox" name="category" /><label for="women's clothing">Women</label></li>
+            <li><input id="electronics" type="checkbox" name="category" /><label for="electronics">Electronics</label></li>
+            
+          </ul>
+        </div>
+
+        <!-- Rating -->
+        <div class="filter-section">
+          <h3>Rating</h3>
+          <input type="range" id="rating-range" min="0" max="5" value="0" list="rating-values" />
+           <span id="rating-value">0</span> ⭐
+          <datalist id="rating-values">
+            <option value="0" label="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </div>
+
+        <!-- Price Range -->
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <ul>
+            <li><input id="0-25" type="checkbox" name="prange" /><label for="0-25">$0 to $25</label></li>
+            <li><input id="25-50" type="checkbox" name="prange" /><label for="25-50">$25 to $50</label></li>
+            <li><input id="50-100" type="checkbox" name="prange" /><label for="50-100">$50 to $100</label></li>
+            <li><input id="100on" type="checkbox" name="prange" /><label for="100on">$100 onwards</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Products Container -->
+      <div id="products-container">
+        <h1 id="welcome-msg"></h1>
+
+        <div id="category-filter">
+          <button id="all-category">All</button>
+          <button id="men-category">Men</button>
+          <button id="women-category">Women</button>
+          <button id="jewellery-category">Jewellery</button>
+          <button id="electronics-category">Electronics</button>
+        </div>
+
+        <div id="products">
+          <!-- Example Product Cards -->
+          <!-- <div class="product-card">
+            <img src="" alt="">
+            <h3 id="product-title">Product 1</h3>
+            <p id="product-price">Price: </p>
+            <p id="product-category">Category:</p>
+            <p id="product-rating">Rating: </p>
+            <button>Add to Cart</button>
+          </div> -->
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="shopScript.js"></script>
+</body>
+</html>
